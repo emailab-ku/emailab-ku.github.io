@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Research directions at the Efficient Machine Intelligence Lab, Korea University." />
+    <title>Research | Efficient Machine Intelligence Lab @ Korea University</title>
+    <link rel="icon" href="images/ku-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/ku-logo.svg" alt="Korea University" />
+          <span class="brand-text">
+            <span class="brand-name">Efficient Machine Intelligence Lab</span>
+            <span class="brand-sub">Korea University · School of Electrical Engineering</span>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+        <nav class="nav">
+          <a href="index.html" data-page="index.html">Home</a>
+          <a href="team.html" data-page="team.html">Team</a>
+          <a href="research.html" data-page="research.html">Research</a>
+          <a href="publications.html" data-page="publications.html">Publications</a>
+          <a href="news.html" data-page="news.html">News</a>
+          <a href="contact.html" data-page="contact.html">Contact</a>
+          <a class="btn primary sm nav-cta" href="join.html">Join Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Research</span>
+          <h1>Efficiency across the AI stack</h1>
+          <p>
+            Modern AI is powerful but expensive. Our mission is to close the gap
+            between what models can do and what real devices can afford —
+            co-designing algorithms and systems so that intelligence becomes
+            fast, compact, and sustainable.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top:28px;">
+        <div class="container">
+          <!-- Direction 1 -->
+          <div class="card reveal" style="margin-bottom:22px">
+            <span class="eyebrow">Direction 01</span>
+            <h2 style="font-family:var(--font-display);font-size:26px;color:var(--ink);margin:6px 0 12px;">Efficient LLMs &amp; Multimodal AI</h2>
+            <p style="max-width:none;">
+              Large language and vision-language models deliver remarkable
+              capability at a steep compute and memory cost. We design
+              token-pruning, efficient-attention, and serving techniques that
+              cut this cost while preserving quality — including training-free
+              methods that apply to already-deployed models. Recent work
+              includes <em>ZOO-Prune</em> (training-free token pruning) and
+              <em>VisRef</em> (visual refocusing for test-time scaling).
+            </p>
+            <div class="tag-row" style="margin-top:16px">
+              <span class="tag">Token Pruning</span>
+              <span class="tag">Efficient Attention</span>
+              <span class="tag">LLM / VLM Serving</span>
+              <span class="tag">Test-Time Scaling</span>
+            </div>
+          </div>
+
+          <!-- Direction 2 -->
+          <div class="card reveal" style="margin-bottom:22px">
+            <span class="eyebrow">Direction 02</span>
+            <h2 style="font-family:var(--font-display);font-size:26px;color:var(--ink);margin:6px 0 12px;">Scalable Agentic AI</h2>
+            <p style="max-width:none;">
+              Agentic and reasoning systems achieve strong performance by
+              scaling test-time computation — but at a rapidly growing token and
+              inference cost. We study how to make long-horizon LLM agents
+              affordable: benchmarking their capabilities, understanding agent
+              harness design, and reducing the tokens spent per task. Recent work
+              includes <em>SkillRet</em> (a large-scale benchmark for skill
+              retrieval in LLM agents) and <em>Agent Harness Engineering: A
+              Survey</em>.
+            </p>
+            <div class="tag-row" style="margin-top:16px">
+              <span class="tag">LLM Agents</span>
+              <span class="tag">Test-Time Scaling</span>
+              <span class="tag">Token-Cost Reduction</span>
+              <span class="tag">Agent Benchmarks</span>
+            </div>
+          </div>
+
+          <!-- Direction 3 -->
+          <div class="card reveal" style="margin-bottom:22px">
+            <span class="eyebrow">Direction 03</span>
+            <h2 style="font-family:var(--font-display);font-size:26px;color:var(--ink);margin:6px 0 12px;">Brain-Inspired &amp; Neuromorphic Computing</h2>
+            <p style="max-width:none;">
+              Spiking neural networks perform event-driven, sparse computation
+              that maps naturally onto energy-efficient neuromorphic hardware.
+              We study training methods, coding schemes, distillation, and
+              ANN-to-SNN conversion — and pair them with in-memory computing —
+              to bring this efficiency to modern deep learning.
+            </p>
+            <div class="tag-row" style="margin-top:16px">
+              <span class="tag">Spiking Neural Networks</span>
+              <span class="tag">Neuromorphic</span>
+              <span class="tag">In-Memory Computing</span>
+              <span class="tag">Energy Efficiency</span>
+            </div>
+          </div>
+
+          <!-- Direction 4 -->
+          <div class="card reveal" style="margin-bottom:22px">
+            <span class="eyebrow">Direction 04</span>
+            <h2 style="font-family:var(--font-display);font-size:26px;color:var(--ink);margin:6px 0 12px;">Continual &amp; Adaptive Learning</h2>
+            <p style="max-width:none;">
+              Deployed models face shifting, open-world data. We develop
+              prompt-based continual learning and backpropagation-free
+              test-time adaptation so models keep improving after deployment.
+              Recent work includes <em>Open-World Dynamic Prompt</em> learning
+              and <em>Probabilistic Gaussian Alignment</em> for
+              backpropagation-free test-time adaptation.
+            </p>
+            <div class="tag-row" style="margin-top:16px">
+              <span class="tag">Continual Learning</span>
+              <span class="tag">Test-Time Adaptation</span>
+              <span class="tag">Prompt Learning</span>
+              <span class="tag">Open-World</span>
+            </div>
+          </div>
+
+          <!-- Direction 5 -->
+          <div class="card reveal" style="margin-bottom:22px">
+            <span class="eyebrow">Direction 05</span>
+            <h2 style="font-family:var(--font-display);font-size:26px;color:var(--ink);margin:6px 0 12px;">Hardware-Aware Co-Design</h2>
+            <p style="max-width:none;">
+              Efficiency only matters if it maps to real accelerators. We
+              co-design algorithms with hardware — dataflows, crossbar-based and
+              in-memory computing, and transform reuse — so that compact models
+              translate into measurable speedups and energy savings end to end.
+            </p>
+            <div class="tag-row" style="margin-top:16px">
+              <span class="tag">Algorithm–Hardware Co-Design</span>
+              <span class="tag">In-Memory Computing</span>
+              <span class="tag">Accelerators</span>
+              <span class="tag">Dataflow</span>
+            </div>
+          </div>
+
+          <!-- Direction 6 -->
+          <div class="card reveal" style="margin-bottom:22px">
+            <span class="eyebrow">Direction 06</span>
+            <h2 style="font-family:var(--font-display);font-size:26px;color:var(--ink);margin:6px 0 12px;">Model Compression</h2>
+            <p style="max-width:none;">
+              We shrink neural networks so they fit real hardware budgets:
+              post-training and low-data quantization, structured and
+              unstructured pruning, and neural architecture search that preserve
+              accuracy for edge and on-device deployment. Representative work
+              includes <em>GenQ</em> (quantization in low-data regimes) and our
+              neural-architecture-search and lottery-ticket studies.
+            </p>
+            <div class="tag-row" style="margin-top:16px">
+              <span class="tag">Quantization</span>
+              <span class="tag">Pruning</span>
+              <span class="tag">Neural Architecture Search</span>
+              <span class="tag">Lottery Tickets</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>© 2026 Efficient Machine Intelligence Lab, Korea University.</span>
+          <span>Seoul, Republic of Korea</span>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
