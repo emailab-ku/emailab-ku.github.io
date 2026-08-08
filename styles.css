@@ -103,6 +103,17 @@ img {
   flex: none;
 }
 
+.mini-lab-mark {
+  width: 74px;
+  height: 34px;
+  flex: none;
+  background-image: url("images/emi-lab-mark.png");
+  background-repeat: no-repeat;
+  background-size: 183px 183px;
+  background-position: -54px -69px;
+  mix-blend-mode: multiply;
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -244,34 +255,6 @@ img {
     ),
     linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 70%);
   overflow: hidden;
-}
-
-.hero-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
-  align-items: center;
-  gap: 48px;
-}
-
-.hero-copy {
-  min-width: 0;
-}
-
-.hero-lab-mark {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 852 / 457;
-  overflow: hidden;
-  border-radius: var(--radius);
-}
-
-.hero-lab-mark img {
-  position: absolute;
-  width: 180%;
-  max-width: none;
-  height: auto;
-  left: -40%;
-  top: -125%;
 }
 
 .hero-eyebrow {
@@ -1359,15 +1342,6 @@ a.person-photo:hover {
 
 /* --------------------------------------------------------- Responsive ---- */
 @media (max-width: 900px) {
-  .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .hero-lab-mark {
-    width: min(100%, 380px);
-  }
-
   .nav {
     position: fixed;
     inset: 72px 0 auto 0;
@@ -1434,8 +1408,19 @@ a.person-photo:hover {
 }
 
 @media (max-width: 640px) {
-  .hero-lab-mark {
-    width: min(100%, 320px);
+  .brand {
+    gap: 8px;
+  }
+
+  .mini-lab-mark {
+    width: 49px;
+    height: 23px;
+    background-size: 124px 124px;
+    background-position: -37px -47px;
+  }
+
+  .brand-text {
+    display: none;
   }
 
   .collab-logos {
