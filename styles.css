@@ -107,11 +107,10 @@ img {
   width: 74px;
   height: 34px;
   flex: none;
-  background-image: url("images/emi-lab-mark.png");
+  background-image: url("images/emi-lab-mark-transparent.png");
   background-repeat: no-repeat;
-  background-size: 183px 183px;
-  background-position: -54px -69px;
-  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
 }
 
 .brand-text {
@@ -1409,8 +1408,6 @@ a.person-photo:hover {
   .mini-lab-mark {
     width: 49px;
     height: 23px;
-    background-size: 124px 124px;
-    background-position: -37px -47px;
   }
 
   .brand-text {
