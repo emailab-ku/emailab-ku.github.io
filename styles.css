@@ -1128,6 +1128,9 @@ a.person-photo:hover {
 .collab-logos img[alt="Thaki Cloud"] {
   height: 24px;
 }
+.collab-logos img[alt="Oak Ridge National Laboratory"] {
+  height: 36px;
+}
 
 /* Physion Labs has no wordmark; pair its icon with a text label */
 .collab-lockup {
@@ -1154,15 +1157,6 @@ a.person-photo:hover {
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--ink);
-}
-
-.collab-wordmark {
-  max-width: 240px;
-  color: var(--ink);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
 }
 
 .collab-logos img:hover {
