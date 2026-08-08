@@ -103,6 +103,17 @@ img {
   flex: none;
 }
 
+.mini-lab-mark {
+  width: 74px;
+  height: 34px;
+  flex: none;
+  background-image: url("images/emi-lab-mark.png");
+  background-repeat: no-repeat;
+  background-size: 183px 183px;
+  background-position: -54px -69px;
+  mix-blend-mode: multiply;
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -1117,6 +1128,9 @@ a.person-photo:hover {
 .collab-logos img[alt="Thaki Cloud"] {
   height: 24px;
 }
+.collab-logos img[alt="Oak Ridge National Laboratory"] {
+  height: 36px;
+}
 
 /* Physion Labs has no wordmark; pair its icon with a text label */
 .collab-lockup {
@@ -1388,6 +1402,25 @@ a.person-photo:hover {
 }
 
 @media (max-width: 640px) {
+  .brand {
+    gap: 8px;
+  }
+
+  .mini-lab-mark {
+    width: 49px;
+    height: 23px;
+    background-size: 124px 124px;
+    background-position: -37px -47px;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .collab-logos {
+    gap: 36px;
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
   }
