@@ -246,6 +246,34 @@ img {
   overflow: hidden;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-lab-mark {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 852 / 457;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.hero-lab-mark img {
+  position: absolute;
+  width: 180%;
+  max-width: none;
+  height: auto;
+  left: -40%;
+  top: -125%;
+}
+
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -1145,6 +1173,15 @@ a.person-photo:hover {
   color: var(--ink);
 }
 
+.collab-wordmark {
+  max-width: 240px;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
 .collab-logos img:hover {
   opacity: 1;
   transform: translateY(-2px);
@@ -1322,6 +1359,15 @@ a.person-photo:hover {
 
 /* --------------------------------------------------------- Responsive ---- */
 @media (max-width: 900px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-lab-mark {
+    width: min(100%, 380px);
+  }
+
   .nav {
     position: fixed;
     inset: 72px 0 auto 0;
@@ -1388,6 +1434,14 @@ a.person-photo:hover {
 }
 
 @media (max-width: 640px) {
+  .hero-lab-mark {
+    width: min(100%, 320px);
+  }
+
+  .collab-logos {
+    gap: 36px;
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
   }
